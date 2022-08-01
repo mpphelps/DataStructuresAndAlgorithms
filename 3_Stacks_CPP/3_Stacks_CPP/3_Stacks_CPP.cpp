@@ -40,6 +40,7 @@ public:
 	void Pop() {
 		if (this->IsEmpty()) throw new std::invalid_argument("Stack is empty)");
 		else _stack[_count - 1] = 0;
+		_count--;
 	}
 	T Peek() {
 		return _stack[_count - 1];
@@ -64,6 +65,15 @@ public:
 			if (_stack[i] < min) min = _stack[i];
 		}
 		return min;
+	}
+	T Max() {
+		if (this->IsEmpty()) throw new std::logic_error("Stack is empty)");
+		T max = _stack[0];
+		for (int i = 0; i < _count; i++)
+		{
+			if (_stack[i] > max) max = _stack[i];
+		}
+		return max;
 	}
 };
 
