@@ -1,0 +1,15 @@
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\bin\Debug\net6.0\2_LinkedLists_CSharp.exe
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\bin\Debug\net6.0\2_LinkedLists_CSharp.deps.json
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\bin\Debug\net6.0\2_LinkedLists_CSharp.runtimeconfig.json
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\bin\Debug\net6.0\2_LinkedLists_CSharp.dll
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\bin\Debug\net6.0\2_LinkedLists_CSharp.pdb
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\2_LinkedLists_CSharp.csproj.AssemblyReference.cache
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\2_LinkedLists_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\2_LinkedLists_CSharp.AssemblyInfoInputs.cache
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\2_LinkedLists_CSharp.AssemblyInfo.cs
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\2_LinkedLists_CSharp.csproj.CoreCompileInputs.cache
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\2_LinkedLists_CSharp.dll
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\refint\2_LinkedLists_CSharp.dll
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\2_LinkedLists_CSharp.pdb
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\2_LinkedLists_CSharp.genruntimeconfig.cache
+C:\Dev\Mosh - Data Structures and Algorithms\2_LinkedLists_CSharp\2_LinkedLists_CSharp\obj\Debug\net6.0\ref\2_LinkedLists_CSharp.dll
