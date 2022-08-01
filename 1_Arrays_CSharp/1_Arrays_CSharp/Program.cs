@@ -5,6 +5,11 @@ namespace Arrays
 
     class Array<T> where T : IComparable
     {
+        /*  Linked List Structure
+        *  NODE -> NODE -> NODE -> NODE
+        *   ^                       ^
+        *  TAIL                    HEAD
+        */
         private int _count = 0;
         private T[] _array;
         private int _arraySize;
