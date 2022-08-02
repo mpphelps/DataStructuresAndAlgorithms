@@ -134,48 +134,77 @@ public:
 };
 
 template <typename T>
-class PriortyQueue {
+class PriorityQueue {
 private:
     int _queueSize;
-    T* _priortyQueue;
+    int _count;
+    T* _priorityQueue;
 public:
-    PriortyQueue() : _queueSize(10)
+    PriorityQueue() : _queueSize(10), _count(0)
     {
-        _priortyQueue = new T[_queueSize];
+        _priorityQueue = new T[_queueSize];
         for (int i = 0; i < 10; i++)
         {
-            _queue[i] = NULL;
+            _priorityQueue[i] = NULL;
         }
     }
-    PriortyQueue(int size) : _queueSize(size)
+    PriorityQueue(int size) : _queueSize(size), _count(0)
     {
-        __priortyQueue = new T[size];
+        _priorityQueue = new T[size];
         for (int i = 0; i < size; i++)
         {
-            _queue[i] = NULL;
+            _priorityQueue[i] = NULL;
         }
     }
-    ~PriortyQueue() {
-        delete _queue;
+    ~PriorityQueue() {
+        delete _priorityQueue;
     }
-
-    void Enqueue(T Value) {
-
+    void Enqueue(T value) {
+        if (!IsFull()) {
+            for (int i = _count; i >= 0; i--)
+            {
+                if (i == 0) {
+                    _priorityQueue[i] = value;
+                    std::cout << "Queuing: " << value << std::endl;
+                    break;
+                }
+                else if (value > _priorityQueue[i - 1]) {
+                    _priorityQueue[i] = value;
+                    std::cout << "Queuing: " << value << std::endl;
+                    break;
+                }
+                else {
+                    _priorityQueue[i] = _priorityQueue[i - 1];
+                }
+            }
+            _count++;
+        }
     }
     void Dequeue() {
-
+        if (!IsEmpty()) {
+            _priorityQueue[_count-1] = NULL;
+            _count--;
+        }
     }
     T Peek() {
-
+        return _priorityQueue[_count - 1];
     }
     void Print() {
+        std::cout << "FRONT: {";
+        for (int i = _count-1; i >= 0; i--)
+        {
+            std::cout << _priorityQueue[i] << ", ";
+        }
+        std::cout << " } :BACK" << std::endl;
 
     }
-    bool isFull() {
-        for (int i = 0; i < _queueSize; i++) {
-            if (_queue[i] == NULL) return false;
-        }
-        return true;
+    bool IsFull() {
+        if (_count == _queueSize) return true;
+        else return false;
+    }
+    bool IsEmpty() {
+        if (_count == 0) return true;
+        else return false;
     }
 };
 
@@ -193,7 +222,7 @@ void reverse(std::queue<int>* queue) {
 
 int main()
 {
-    /*
+    /* Queue Notes
      * Queues are Last in First out data structures
      * Enqueue - adding item to back
      * Dequeue - adding item from front
@@ -249,7 +278,8 @@ int main()
     myQueue3->Enqueue(50);
     myQueue3->Print();*/
 
-    std::priority_queue<int>* priorityQueue = new std::priority_queue<int>;
+    // Practice using priority queues from std library
+    /*std::priority_queue<int>* priorityQueue = new std::priority_queue<int>;
     priorityQueue->push(5);
     priorityQueue->push(9);
     priorityQueue->push(1);
@@ -260,8 +290,23 @@ int main()
         std::cout << priorityQueue->top() << ", ";
         priorityQueue->pop();
     }
-    std::cout << " }";
+    std::cout << " }";*/
 
-
+    // Practice using queues from custom priority queue class
+    /*PriorityQueue<int>* priorityQueue = new PriorityQueue<int>;
+    priorityQueue->Enqueue(5);
+    priorityQueue->Enqueue(9);
+    priorityQueue->Enqueue(1);
+    priorityQueue->Enqueue(4);
+    priorityQueue->Enqueue(2);
+    priorityQueue->Print();
+    priorityQueue->Dequeue();
+    priorityQueue->Dequeue();
+    priorityQueue->Dequeue();
+    priorityQueue->Print();
+    priorityQueue->Enqueue(30);
+    priorityQueue->Enqueue(40);
+    priorityQueue->Enqueue(50);
+    priorityQueue->Print();*/
 
 }
