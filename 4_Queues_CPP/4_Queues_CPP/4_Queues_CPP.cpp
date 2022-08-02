@@ -203,6 +203,102 @@ public:
     }
 };
 
+template <typename T>
+class LinkedListQueue
+{
+private:
+    template <typename NodeType>
+    struct Node
+    {
+    	NodeType value;
+        Node* nextNode;
+        Node() : value(0), nextNode(nullptr) {};
+        Node(NodeType nodeValue) : value(nodeValue), nextNode(nullptr) {};
+    };
+    int _count;
+    Node<T>* head = new Node<T>;
+    Node<T>* tail = new Node<T>;
+public:
+	void Enqueue(T value)
+	{
+        Node<T>* newNode = new Node<T>(value);
+		if(head->nextNode == nullptr && tail->nextNode == nullptr)
+		{
+            tail->nextNode = head->nextNode = newNode;
+		}
+		else
+		{
+            newNode->nextNode = tail->nextNode;
+            tail->nextNode = newNode;
+		}
+        _count++;
+	}
+    void Dequeue()
+	{
+        Node<T>* nodePtr = tail->nextNode;
+        while(nodePtr->nextNode->nextNode != nullptr)
+        {
+            nodePtr = nodePtr->nextNode;
+        }
+        head->nextNode = nodePtr;
+        delete head->nextNode->nextNode;
+        head->nextNode->nextNode = nullptr;
+        _count--;
+	}
+    T Peek()
+	{
+        return head->nextNode;
+	}
+    int Size()
+	{
+        return _count;
+	}
+    bool IsEmpty()
+	{
+        if (_count == 0) return true;
+        else return false;
+	}
+    void Print()
+	{
+        Node<T>* nodePtr = tail->nextNode;
+        std::cout << "Queue: { ";
+        while(nodePtr!=nullptr)
+        {
+            std::cout << nodePtr->value << ", ";
+            nodePtr = nodePtr->nextNode;
+        }
+        std::cout << " }" << std::endl;
+	}
+};
+
+void ReverseFirstKItems(int k, std::queue<int> &input)
+{
+    std::stack<int>* tempStack = new std::stack<int>;
+    std::queue<int>* tempQueue = new std::queue<int>;
+    int temp;
+
+    for (int i = 0; i < k; i++)
+    {
+        tempStack->push(input.front());
+        input.pop();
+    }
+    while(!input.empty())
+    {
+        tempQueue->push(input.front());
+        input.pop();
+    }
+    while(!tempStack->empty())
+    {
+        input.push(tempStack->top());
+        tempStack->pop();
+    }
+    while (!tempQueue->empty())
+    {
+        input.push(tempQueue->front());
+        tempQueue->pop();
+    }
+}
+
 void reverse(std::queue<int>* queue) {
     std::stack<int> stack;
     while (!queue->empty()) {
@@ -224,11 +320,11 @@ void printFor() {
     std::cout << i << std::endl;
 }
 
+
 int main()
 {
-    printFor();
-    /* Queue Notes
-     * Queues are Last in First out data structures
+    // Queue Notes
+	/* Queues are Last in First out data structures
      * Enqueue - adding item to back
      * Dequeue - adding item from front
      * Peek - looking at item in front without removing from queue
@@ -314,4 +410,31 @@ int main()
     priorityQueue->Enqueue(50);
     priorityQueue->Print();*/
 
+    // Exercises for Queues
+    // Problem 1
+    /*auto myQueue = new std::queue<int>;
+    myQueue->push(10);
+    myQueue->push(20);
+    myQueue->push(30);
+    myQueue->push(40);
+    myQueue->push(50);
+    ReverseFirstKItems(3, *myQueue);
+    int queueSize = myQueue->size();
+    for( int i = 0; i < queueSize; i++)
+    {
+        std::cout << myQueue->front() << std::endl;
+        myQueue->pop();
+    }*/
+
+    // Practice using queues from custom linked list queue class
+	auto* linkListQueue = new LinkedListQueue<int>;
+    linkListQueue->Enqueue(10);
+    linkListQueue->Enqueue(20);
+    linkListQueue->Enqueue(30);
+    linkListQueue->Enqueue(40);
+    linkListQueue->Enqueue(50);
+    linkListQueue->Print();
+    linkListQueue->Dequeue();
+    linkListQueue->Dequeue();
+    linkListQueue->Print();
 }
