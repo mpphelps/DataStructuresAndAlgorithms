@@ -161,22 +161,17 @@ public:
     }
     void Enqueue(T value) {
         if (!IsFull()) {
-            for (int i = _count; i >= 0; i--)
+            int i;
+            for (i = _count-1; i >= 0; i--)
             {
-                if (i == 0) {
-                    _priorityQueue[i] = value;
-                    std::cout << "Queuing: " << value << std::endl;
-                    break;
-                }
-                else if (value > _priorityQueue[i - 1]) {
-                    _priorityQueue[i] = value;
-                    std::cout << "Queuing: " << value << std::endl;
-                    break;
+                if (_priorityQueue[i] > value) {
+                    _priorityQueue[i + 1] = _priorityQueue[i];
                 }
                 else {
-                    _priorityQueue[i] = _priorityQueue[i - 1];
+                    break;
                 }
             }
+            _priorityQueue[i + 1] = value;
             _count++;
         }
     }
@@ -220,8 +215,18 @@ void reverse(std::queue<int>* queue) {
     }
 }
 
+void printFor() {
+    int i;
+    for (i = 5; i >= 0; i--)
+    {
+        std::cout << i << std::endl;
+    }
+    std::cout << i << std::endl;
+}
+
 int main()
 {
+    printFor();
     /* Queue Notes
      * Queues are Last in First out data structures
      * Enqueue - adding item to back
