@@ -1,0 +1,15 @@
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\bin\Debug\net6.0\7_AVLTrees_CSharp.exe
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\bin\Debug\net6.0\7_AVLTrees_CSharp.deps.json
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\bin\Debug\net6.0\7_AVLTrees_CSharp.runtimeconfig.json
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\bin\Debug\net6.0\7_AVLTrees_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\bin\Debug\net6.0\7_AVLTrees_CSharp.pdb
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\7_AVLTrees_CSharp.csproj.AssemblyReference.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\7_AVLTrees_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\7_AVLTrees_CSharp.AssemblyInfoInputs.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\7_AVLTrees_CSharp.AssemblyInfo.cs
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\7_AVLTrees_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\7_AVLTrees_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\refint\7_AVLTrees_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\7_AVLTrees_CSharp.pdb
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\7_AVLTrees_CSharp.genruntimeconfig.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\7_AVLTrees_CSharp\7_AVLTrees_CSharp\obj\Debug\net6.0\ref\7_AVLTrees_CSharp.dll
