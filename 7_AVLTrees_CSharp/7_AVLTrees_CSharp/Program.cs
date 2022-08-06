@@ -105,6 +105,25 @@ namespace AVLTrees
         {
             return (node == null) ? -1 : node.Height;
         }
+        private bool IsBalanced(AVLNode node)
+        {
+            bool leftBalanced = true;
+            bool rightBalanced = true;
+            if (node.Left  != null) leftBalanced  = IsBalanced(node.Left);
+            if (node.Right != null) rightBalanced = IsBalanced(node.Right);
+            if (Math.Abs(BalanceFactor(node)) <= 1) return (leftBalanced && rightBalanced);
+            return false;
+        }
+
+        private bool IsPerfect(AVLNode node)
+        {
+            bool leftPerfect = true;
+            bool rightPerfect = true;
+            if (node.Left != null) leftPerfect = IsPerfect(node.Left);
+            if (node.Right != null) rightPerfect = IsPerfect(node.Right);
+            if (Math.Abs(BalanceFactor(node)) == 0) return (leftPerfect && rightPerfect);
+            return false;
+        }
         #endregion
         #region Public Methods
         public void Insert(int value)
@@ -113,6 +132,16 @@ namespace AVLTrees
             _root ??= new AVLNode(value);
             _root = Insert(_root, value);
         }
+        public bool IsBalanced()
+        {
+            return IsBalanced(_root);
+        }
+
+        public bool IsPerfect()
+        {
+            return IsPerfect(_root);
+        }
+
         #endregion
     }
     class Program
@@ -147,8 +176,11 @@ namespace AVLTrees
             avlTree.Insert(9);
             avlTree.Insert(4);
             avlTree.Insert(6);
+            avlTree.Insert(1);
             avlTree.Insert(2);
-            /*
+            Console.WriteLine($"Is avlTree balanced? {avlTree.IsBalanced()}");
+            Console.WriteLine($"Is avlTree perfect? {avlTree.IsPerfect()}");
+            /*  Insert(1,2,3,6,9,12)
              *          4
              *'       /   \
              *      3       9
