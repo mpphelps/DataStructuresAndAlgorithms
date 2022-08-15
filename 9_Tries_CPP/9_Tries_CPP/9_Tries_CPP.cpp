@@ -84,6 +84,37 @@ private:
 				}
 			}
 		}
+		void AutoComplete(const std::string& word, int i, std::vector<std::string>* words)
+		{
+			if(hasChild(word[i]))
+			{
+				getChild(word[i])->AutoComplete(word, i+1, words);
+			}
+
+			// Now we are at the node where word is
+			// We need to get a list of words from here to the next end of word and return that list to the user
+
+			if (i == word.length()) GetAutoCompleteWordList(words, word);
+
+			
+		}
+		void GetAutoCompleteWordList(std::vector<std::string>* words, std::string currentWord)
+		{
+			for (auto j = _children->begin(); j != _children->end(); j++)
+			{
+				currentWord.push_back(j->first);
+				if (j->second->isEndOfWord) {
+					words->push_back(currentWord);
+					std::cout << j->first << '*' << std::endl;
+				}
+				if(!j->second->_children->empty())
+				{
+					j->second->GetAutoCompleteWordList(words, currentWord);
+					std::cout << j->first << std::endl;
+				}
+				currentWord.pop_back();
+			}
+		}
 	};
 	Node* _root;
 public:
@@ -156,6 +187,12 @@ public:
 	{
 		_root->Remove(word, 0);
 	}
+	std::vector<std::string> AutoComplete(const std::string& word)
+	{
+		auto words = new std::vector<std::string>;
+		_root->AutoComplete(word, 0, words);
+		return *words;
+	}
 	static int Index(const char character)
 	{
 		const int index = character - 'a';
@@ -183,32 +220,41 @@ int main()
 	std::cout << "Adding dog" << std::endl;
 	trie->Insert("dog");
 	trie->InorderPrint();
-	std::cout << "Removing cart" << std::endl;
-	trie->Remove("cart");
+	std::cout << "Adding carpenter" << std::endl;
+	trie->Insert("carpenter");
 	trie->InorderPrint();
-	std::cout << "Removing car" << std::endl;
-	trie->Remove("car");
-	trie->InorderPrint();
-	std::cout << "Removing care" << std::endl;
-	trie->Remove("care");
-	trie->InorderPrint();
-	std::cout << "Removing dog" << std::endl;
-	trie->Remove("dog");
-	trie->InorderPrint();
-	std::cout << "Removing dog" << std::endl;
-	trie->Remove("dog");
-	trie->InorderPrint();
-	std::cout << "Adding c" << std::endl;
-	trie->Insert("c");
-	trie->InorderPrint();
-	std::cout << "Removing c" << std::endl;
-	trie->Remove("c");
-	trie->InorderPrint();
+	//std::cout << "Removing cart" << std::endl;
+	//trie->Remove("cart");
+	//trie->InorderPrint();
+	//std::cout << "Removing car" << std::endl;
+	//trie->Remove("car");
+	//trie->InorderPrint();
+	//std::cout << "Removing care" << std::endl;
+	//trie->Remove("care");
+	//trie->InorderPrint();
+	//std::cout << "Removing dog" << std::endl;
+	//trie->Remove("dog");
+	//trie->InorderPrint();
+	//std::cout << "Removing dog" << std::endl;
+	//trie->Remove("dog");
+	//trie->InorderPrint();
+	//std::cout << "Adding c" << std::endl;
+	//trie->Insert("c");
+	//trie->InorderPrint();
+	//std::cout << "Removing c" << std::endl;
+	//trie->Remove("c");
+	//trie->InorderPrint();
 
-	std::cout << "Contains dog? " << trie->Contains("dog") << std::endl;
+	/*std::cout << "Contains dog? " << trie->Contains("dog") << std::endl;
 	std::cout << "Contains canada? " << trie->Contains("canada") << std::endl;
 	std::cout << "Contains can? " << trie->Contains("can") << std::endl;
 	std::cout << "Contains ca? " << trie->Contains("ca") << std::endl;
-	std::cout << "Contains ''? " << trie->Contains("") << std::endl;
+	std::cout << "Contains ''? " << trie->Contains("") << std::endl;*/
 	//trie->PostOrderPrint();
+	std::cout << "Auto Complete car: " << std::endl;
+	auto words = trie->AutoComplete("");
+	for (auto word : words)
+	{
+		std::cout << word << std::endl;
+	}
 }
