@@ -140,12 +140,13 @@ private:
 		int CountWords()
 		{
 			int wordCount = 0;
+
+			if (isEndOfWord)
+				wordCount++;
+
 			for (auto i = _children->begin(); i != _children->end(); i++)
-			{
-				wordCount = wordCount + _children->at(i->first)->CountWords();
-				if (i->second->isEndOfWord)
-					wordCount++;
-			}
+				wordCount += _children->at(i->first)->CountWords();
+
 			return wordCount;
 		}
 		void LongestCommonPrefix(std::string* prefix)
