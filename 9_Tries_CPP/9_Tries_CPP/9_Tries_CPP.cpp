@@ -19,18 +19,27 @@ private:
 		{
 			delete _children;
 		}
-		bool hasChild(const char ch)
+		bool HasChild(const char ch)
 		{
 			return _children->find(ch) != _children->end();
 		}
-		void addChild(const char ch)
+		void AddChild(const char ch)
 		{
 			Node* node = new Node(ch);
 			_children->insert({ ch, node });
 		}
-		Node* getChild(const char ch)
+		Node* GetChild(const char ch)
 		{
 			return _children->at(ch);
+		}
+		int GetDirectChildrenQuantity()
+		{
+			int quantity = 0;
+			for (auto i = _children->begin(); i != _children->end(); i++)
+			{
+				quantity++;
+			}
+			return quantity;
 		}
 		void InorderPrint()
 		{
@@ -56,8 +65,8 @@ private:
 		}
 		void Remove(const std::string& word, int wordIndex)
 		{
-			if (!hasChild(word[wordIndex])) return;
-			Node* child = getChild(word[wordIndex]);
+			if (!HasChild(word[wordIndex])) return;
+			Node* child = GetChild(word[wordIndex]);
 
 			// if we are not at end of word
 			if (wordIndex < word.length()-1) {
@@ -86,9 +95,9 @@ private:
 		}
 		void AutoComplete(const std::string& word, int i, std::vector<std::string>* words)
 		{
-			if(hasChild(word[i]))
+			if(HasChild(word[i]))
 			{
-				getChild(word[i])->AutoComplete(word, i+1, words);
+				GetChild(word[i])->AutoComplete(word, i+1, words);
 			}
 
 			// Now we are at the node where word is
@@ -115,6 +124,39 @@ private:
 				currentWord.pop_back();
 			}
 		}
+		bool Contains(const std::string& word, int i)
+		{
+			if (i == word.length())
+			{
+				return true;
+			}
+			if (HasChild(word[i]))
+			{
+				return GetChild(word[i])->Contains(word, i + 1);
+			}
+			return false;
+			
+		}
+		int CountWords()
+		{
+			int wordCount = 0;
+			for (auto i = _children->begin(); i != _children->end(); i++)
+			{
+				wordCount = wordCount + _children->at(i->first)->CountWords();
+				if (i->second->isEndOfWord)
+					wordCount++;
+			}
+			return wordCount;
+		}
+		void LongestCommonPrefix(std::string* prefix)
+		{
+			if(_value!=NULL) prefix->push_back(_value);
+			if (GetDirectChildrenQuantity() == 0 || GetDirectChildrenQuantity() > 1 || isEndOfWord) return;
+			for (auto i = _children->begin(); i != _children->end(); i++)
+			{
+				_children->at(i->first)->LongestCommonPrefix(prefix);
+			}
+		}
 	};
 	Node* _root;
 public:
@@ -127,9 +169,9 @@ public:
 		Node* currentNode = _root;
 		for (const char ch : word)
 		{
-			if (!currentNode->hasChild(ch))
-				currentNode->addChild(ch);
-			currentNode = currentNode->getChild(ch);
+			if (!currentNode->HasChild(ch))
+				currentNode->AddChild(ch);
+			currentNode = currentNode->GetChild(ch);
 		}
 		currentNode->isEndOfWord = true;
 	}
@@ -138,10 +180,14 @@ public:
 		Node* currentNode = _root;
 		for (const char ch : word)
 		{
-			if (currentNode->hasChild(ch)) currentNode = currentNode->getChild(ch);
+			if (currentNode->HasChild(ch)) currentNode = currentNode->GetChild(ch);
 			else return false;
 		}
 		return currentNode->isEndOfWord;
+	}
+	bool Contains2 (const std::string& word)
+	{
+		return _root->Contains(word, 0);
 	}
 	void InorderPrint()
 	{
@@ -154,10 +200,10 @@ public:
 	void Remove(const std::string& word, Node* currentNode, int wordIndex)
 	{
 		// if we are not at end of word and child has letter
-		if (wordIndex < word.length() && currentNode->hasChild(word[wordIndex]))
+		if (wordIndex < word.length() && currentNode->HasChild(word[wordIndex]))
 		{
 			// make currentnode = child and increment wordindex, recurse
-			currentNode = currentNode->getChild(word[wordIndex]);
+			currentNode = currentNode->GetChild(word[wordIndex]);
 			wordIndex++;
 			Remove(word, currentNode, wordIndex);
 		}
@@ -202,6 +248,16 @@ public:
 		}
 		return index;
 	}
+	int CountWords()
+	{
+		return _root->CountWords();
+	}
+	std::string LongestCommonPrefix()
+	{
+		std::string* prefix = new std::string {""};
+		_root->LongestCommonPrefix(prefix);
+		return *prefix;
+	}
 };
 
 
@@ -217,9 +273,9 @@ int main()
 	std::cout << "Adding cart" << std::endl;
 	trie->Insert("cart");
 	trie->InorderPrint();
-	std::cout << "Adding dog" << std::endl;
+/*	std::cout << "Adding dog" << std::endl;
 	trie->Insert("dog");
-	trie->InorderPrint();
+	trie->InorderPrint()*/;
 	std::cout << "Adding carpenter" << std::endl;
 	trie->Insert("carpenter");
 	trie->InorderPrint();
@@ -252,9 +308,14 @@ int main()
 	std::cout << "Contains ''? " << trie->Contains("") << std::endl;*/
 	//trie->PostOrderPrint();
 	std::cout << "Auto Complete car: " << std::endl;
-	auto words = trie->AutoComplete("");
+	auto words = trie->AutoComplete("car");
 	for (auto word : words)
 	{
 		std::cout << word << std::endl;
 	}
+
+	std::cout << "Contains car: " << trie->Contains2("car") << std::endl;
+	std::cout << "Word Count: " << trie->CountWords() << std::endl;
+	std::cout << "Longest Common Prefix: " << trie->LongestCommonPrefix() << std::endl;
+	
 }
