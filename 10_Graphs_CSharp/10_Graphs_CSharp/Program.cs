@@ -20,7 +20,7 @@ namespace Graphs
             }
         }
         // need a hashmap for every label and it's index in the adjaceny list
-        private Dictionary<string, Node> _nodes = new Dictionary<string, Node>();
+        private Dictionary<string, Node> nodes = new Dictionary<string, Node>();
         // need an ajacency list which is an array of linked lists
         private Dictionary<Node, List<Node>> adjacencyList = new Dictionary<Node, List<Node>>();
 
@@ -28,15 +28,15 @@ namespace Graphs
         public void AddNode(string label)
         {
             var node = new Node(label);
-            _nodes.Add(label, node);
+            nodes.Add(label, node);
             adjacencyList.Add(node, new List<Node>());
         }
-        public void addEdge(string from, String to)
+        public void AddEdge(string from, String to)
         {
-            var fromNode = _nodes[from];
+            var fromNode = nodes[from];
             if (fromNode == null)
                 throw new Exception("Illegal From Arguement");
-            var toNode = _nodes[to];
+            var toNode = nodes[to];
             if (toNode == null)
                 throw new Exception("Illegal To Arguement");
 
@@ -45,17 +45,22 @@ namespace Graphs
 
         public void RemoveNode(string label)
         {
-
+            var node = nodes[label];
+            if (node == null) return;
+            foreach (var key in adjacencyList.Keys)
+            {
+                adjacencyList[key].Remove(node);
+            }
+            adjacencyList.Remove(node);
+            nodes.Remove(node.ToString());
         }
 
-        public void AddEdge()
+        public void RemoveEdge(string from, string to)
         {
-
-        }
-
-        public void RemoveEdge()
-        {
-
+            var fromNode = nodes[from];
+            var toNode = nodes[to];
+            if (fromNode == null || toNode == null) return;
+            adjacencyList[fromNode].Remove(toNode);
         }
 
         public void Print()
@@ -86,13 +91,14 @@ namespace Graphs
             myGraph.AddNode("Michael");
             myGraph.AddNode("Sofia");
             myGraph.AddNode("Juliana");
-            myGraph.addEdge("Andy", "Ed");
-            myGraph.addEdge("Barbara", "Ed");
-            myGraph.addEdge("Andy", "Michael");
-            myGraph.addEdge("Barbara", "Michael");
-            myGraph.addEdge("Michael", "Juliana");
-            myGraph.addEdge("Sofia", "Juliana");
+            myGraph.AddEdge("Andy", "Ed");
+            myGraph.AddEdge("Barbara", "Ed");
+            myGraph.AddEdge("Andy", "Michael");
+            myGraph.AddEdge("Barbara", "Michael");
+            myGraph.AddEdge("Michael", "Juliana");
+            myGraph.AddEdge("Sofia", "Juliana");
             myGraph.Print();
+
         }
     }
     
