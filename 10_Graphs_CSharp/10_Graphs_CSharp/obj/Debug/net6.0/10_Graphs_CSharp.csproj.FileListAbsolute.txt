@@ -13,3 +13,18 @@ C:\Dev\Mosh - Data Structures and Algorithms\10_Graphs_CSharp\10_Graphs_CSharp\o
 C:\Dev\Mosh - Data Structures and Algorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.pdb
 C:\Dev\Mosh - Data Structures and Algorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.genruntimeconfig.cache
 C:\Dev\Mosh - Data Structures and Algorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\ref\10_Graphs_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\bin\Debug\net6.0\10_Graphs_CSharp.exe
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\bin\Debug\net6.0\10_Graphs_CSharp.deps.json
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\bin\Debug\net6.0\10_Graphs_CSharp.runtimeconfig.json
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\bin\Debug\net6.0\10_Graphs_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\bin\Debug\net6.0\10_Graphs_CSharp.pdb
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.csproj.AssemblyReference.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.AssemblyInfoInputs.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.AssemblyInfo.cs
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\refint\10_Graphs_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.pdb
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\10_Graphs_CSharp.genruntimeconfig.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\10_Graphs_CSharp\10_Graphs_CSharp\obj\Debug\net6.0\ref\10_Graphs_CSharp.dll

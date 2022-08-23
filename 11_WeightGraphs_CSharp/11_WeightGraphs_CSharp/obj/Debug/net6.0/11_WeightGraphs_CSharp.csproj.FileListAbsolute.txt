@@ -1,0 +1,15 @@
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\11_WeightGraphs_CSharp.csproj.AssemblyReference.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\11_WeightGraphs_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\11_WeightGraphs_CSharp.AssemblyInfoInputs.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\11_WeightGraphs_CSharp.AssemblyInfo.cs
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\11_WeightGraphs_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\bin\Debug\net6.0\11_WeightGraphs_CSharp.exe
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\bin\Debug\net6.0\11_WeightGraphs_CSharp.deps.json
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\bin\Debug\net6.0\11_WeightGraphs_CSharp.runtimeconfig.json
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\bin\Debug\net6.0\11_WeightGraphs_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\bin\Debug\net6.0\11_WeightGraphs_CSharp.pdb
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\11_WeightGraphs_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\refint\11_WeightGraphs_CSharp.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\11_WeightGraphs_CSharp.pdb
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\11_WeightGraphs_CSharp.genruntimeconfig.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\11_WeightGraphs_CSharp\11_WeightGraphs_CSharp\obj\Debug\net6.0\ref\11_WeightGraphs_CSharp.dll

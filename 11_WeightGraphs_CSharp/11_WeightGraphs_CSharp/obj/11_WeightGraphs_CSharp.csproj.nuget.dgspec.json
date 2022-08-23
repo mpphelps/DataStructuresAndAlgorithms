@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\10_Graphs_CSharp\\10_Graphs_CSharp\\10_Graphs_CSharp.csproj": {}
+    "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\10_Graphs_CSharp\\10_Graphs_CSharp\\10_Graphs_CSharp.csproj": {
+    "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\10_Graphs_CSharp\\10_Graphs_CSharp\\10_Graphs_CSharp.csproj",
-        "projectName": "10_Graphs_CSharp",
-        "projectPath": "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\10_Graphs_CSharp\\10_Graphs_CSharp\\10_Graphs_CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp.csproj",
+        "projectName": "11_WeightGraphs_CSharp",
+        "projectPath": "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp.csproj",
         "packagesPath": "C:\\Users\\h111840\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\10_Graphs_CSharp\\10_Graphs_CSharp\\obj\\",
+        "outputPath": "C:\\Users\\h111840\\Source\\Repos\\DataStructuresAndAlgorithms\\11_WeightGraphs_CSharp\\11_WeightGraphs_CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
