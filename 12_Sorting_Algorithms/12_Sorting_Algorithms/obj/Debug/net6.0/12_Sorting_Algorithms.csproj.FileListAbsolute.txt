@@ -1,0 +1,15 @@
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\bin\Debug\net6.0\12_Sorting_Algorithms.exe
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\bin\Debug\net6.0\12_Sorting_Algorithms.deps.json
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\bin\Debug\net6.0\12_Sorting_Algorithms.runtimeconfig.json
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\bin\Debug\net6.0\12_Sorting_Algorithms.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\bin\Debug\net6.0\12_Sorting_Algorithms.pdb
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\12_Sorting_Algorithms.csproj.AssemblyReference.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\12_Sorting_Algorithms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\12_Sorting_Algorithms.AssemblyInfoInputs.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\12_Sorting_Algorithms.AssemblyInfo.cs
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\12_Sorting_Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\12_Sorting_Algorithms.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\refint\12_Sorting_Algorithms.dll
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\12_Sorting_Algorithms.pdb
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\12_Sorting_Algorithms.genruntimeconfig.cache
+C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\12_Sorting_Algorithms\12_Sorting_Algorithms\obj\Debug\net6.0\ref\12_Sorting_Algorithms.dll
