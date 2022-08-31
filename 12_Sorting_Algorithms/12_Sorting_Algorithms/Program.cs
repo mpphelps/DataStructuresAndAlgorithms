@@ -128,9 +128,28 @@ namespace SortingAlgorithms
 
             }
         }
-        public static void BucketSort(int[] array)
+        public static void BucketSort(int[] array, int numOfBuckets)
         {
-
+            /* Bucket Sort
+             *  Use buckets to split up array and then sort those buckets
+             *
+             * Time Complexity: O(n) to O(n^2)
+             *
+             */
+            var buckets = new List<LinkedList<int>>(numOfBuckets);
+            for (var i = 0; i < numOfBuckets; i++)
+                buckets.Add(new LinkedList<int>());
+            foreach (var t in array)
+                buckets[t / numOfBuckets].AddLast(t);
+            var j = 0;
+            foreach (var bucket in buckets)
+            {
+                var orderedEnumerable = bucket.OrderBy(x => x);
+                foreach (var item in orderedEnumerable)
+                {
+                    array[j++] = item;
+                }
+            }
         }
         private static void QuickSort(int[] array, int start, int end)
         {
@@ -250,7 +269,7 @@ namespace SortingAlgorithms
             //var myArray7 = new int[] { 7, 5};
             //var myArray7 = new int[] { };
             Console.WriteLine(string.Join(", ", myArray7));
-            SortingAlgorithms.BucketSort(myArray7);
+            SortingAlgorithms.BucketSort(myArray7, 4);
             Console.WriteLine(string.Join(", ", myArray7));
             #endregion
         }
