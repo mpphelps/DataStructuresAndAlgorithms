@@ -13,3 +13,18 @@ C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\13_SearchingAlgorithms
 C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.pdb
 C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.genruntimeconfig.cache
 C:\Users\h111840\Source\Repos\DataStructuresAndAlgorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\ref\13_SearchingAlgorithms_CSharp.dll
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\bin\Debug\net6.0\13_SearchingAlgorithms_CSharp.exe
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\bin\Debug\net6.0\13_SearchingAlgorithms_CSharp.deps.json
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\bin\Debug\net6.0\13_SearchingAlgorithms_CSharp.runtimeconfig.json
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\bin\Debug\net6.0\13_SearchingAlgorithms_CSharp.dll
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\bin\Debug\net6.0\13_SearchingAlgorithms_CSharp.pdb
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.csproj.AssemblyReference.cache
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.AssemblyInfoInputs.cache
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.AssemblyInfo.cs
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.csproj.CoreCompileInputs.cache
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.dll
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\refint\13_SearchingAlgorithms_CSharp.dll
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.pdb
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\13_SearchingAlgorithms_CSharp.genruntimeconfig.cache
+C:\Dev\Mosh - Data Structures and Algorithms\13_SearchingAlgorithms_CSharp\13_SearchingAlgorithms_CSharp\obj\Debug\net6.0\ref\13_SearchingAlgorithms_CSharp.dll
